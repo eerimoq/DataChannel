@@ -8,16 +8,12 @@ let package = Package(
     products: [
         .library(
             name: "Webrtc",
-            targets: ["Webrtc"]
+            targets: ["libdatachannel"]
         ),
     ],
     targets: [
         .binaryTarget(name: "libdatachannel",
-                      url: "https://github.com/HaishinKit/libdatachannel-xcframework/releases/download/v0.24.0/libdatachannel.xcframework.zip",
-                      checksum: "52163eed2c9d652d913b20d1fd5a1925c5982b1dcdf335fd916c72ffa385bb26"),
-        .target(
-            name: "Webrtc",
-            dependencies: ["libdatachannel"]
-        ),
+                      url: "https://github.com/eerimoq/libdatachannel-xcframework/releases/download/v0.24.0/libdatachannel.xcframework.zip",
+                      checksum: "fcca84012146129e6d8c045866c4b983366ddd5735e043a64306cc8b02ff020b"),
     ]
 )
