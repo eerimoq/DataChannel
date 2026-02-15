@@ -8,7 +8,7 @@ public enum WebrtcConnectionState {
     case failed
     case closed
 
-    init?(value: rtcState) {
+    public init?(value: rtcState) {
         switch value {
         case RTC_NEW:
             self = .new
@@ -33,7 +33,7 @@ public enum WebrtcGatheringState {
     case inProgress
     case complete
 
-    init?(value: rtcGatheringState) {
+    public init?(value: rtcGatheringState) {
         switch value {
         case RTC_GATHERING_NEW:
             self = .new
